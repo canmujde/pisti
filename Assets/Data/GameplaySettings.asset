@@ -12,7 +12,214 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a056b2c0f977c4d3cae69d0ebb8f7aaa, type: 3}
   m_Name: GameplaySettings
   m_EditorClassIdentifier: 
-  <BaseURL>k__BackingField: http://www.canmujde.com/json-browser/json_files/
-  <GameName>k__BackingField: template
-  <FileExtensionOnRemote>k__BackingField: .json
-  <MaximumAttemptToRequestData>k__BackingField: 3
+  <Deck>k__BackingField:
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 2
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 3
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 4
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 5
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 6
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 7
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 8
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 9
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 10
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 2
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 3
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 4
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 5
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 6
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 7
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 8
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 9
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 10
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 2
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 3
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 4
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 5
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 6
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 7
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 8
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 9
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 10
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 2
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 3
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 4
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 5
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 6
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 7
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 8
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 9
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 10
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: A
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: A
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: A
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: A
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: J
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: J
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: J
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: J
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: Q
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: Q
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: Q
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: Q
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: K
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: K
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: K
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: K
+  <CACHE>k__BackingField:
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 2
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 3
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 4
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 5
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 6
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 7
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 8
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 9
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: 10
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 2
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 3
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 4
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 5
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 6
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 7
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 8
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 9
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: 10
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 2
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 3
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 4
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 5
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 6
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 7
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 8
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 9
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: 10
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 2
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 3
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 4
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 5
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 6
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 7
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 8
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 9
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: 10
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: A
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: A
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: A
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: A
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: J
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: J
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: J
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: J
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: Q
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: Q
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: Q
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: Q
+  - <CardType>k__BackingField: 0
+    <CardValue>k__BackingField: K
+  - <CardType>k__BackingField: 1
+    <CardValue>k__BackingField: K
+  - <CardType>k__BackingField: 2
+    <CardValue>k__BackingField: K
+  - <CardType>k__BackingField: 3
+    <CardValue>k__BackingField: K
+  typ: 3
