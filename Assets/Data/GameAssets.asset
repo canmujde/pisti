@@ -20,4 +20,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1911bea494f263741bca0f754667edc4, type: 3}
   - {fileID: 21300000, guid: be9064f4601b98847b10f99c700cb7f3, type: 3}
   - {fileID: 21300000, guid: 158ad7e4f4bdf48c7b9521ee8cbb0c31, type: 3}
+  - {fileID: 21300000, guid: 63bba0247c737c246944d400c5d1f676, type: 3}
+  - {fileID: 21300000, guid: 5b781104d6be2cc4fb7b980a728176d9, type: 3}
+  - {fileID: 21300000, guid: ef4be979529c2ff43929dffa87181abc, type: 3}
+  - {fileID: 21300000, guid: 64b163813ff9e0c408e2ab72c6b830d4, type: 3}
   audioClips: []
