@@ -2,6 +2,22 @@ namespace CMCore.Models
 {
     public static class Enums
     {
+
+        public enum PlayerState
+        {
+            Thinking,
+            Playing,
+            WaitingForTurn
+        }
+        
+        public enum CardType
+        {
+            Club,
+            Diamond,
+            Heart,
+            Spade
+        }
+        
         public enum Haptic
         {
             H1,
