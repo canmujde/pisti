@@ -64,6 +64,8 @@ namespace CMCore.Managers
                 prefab.transform.SetParent(parent == null ? GameManager.LevelManager.LevelRoot : parent);
                 if (PooledPrefabs.Contains(prefab))
                     PooledPrefabs.Remove(prefab);
+                
+                prefab.ResetBehavior();
                 return prefab;
             }
 
@@ -77,6 +79,7 @@ namespace CMCore.Managers
                 instantiatablePrefab.Id == prefabId);
 
             CreateStack(prefab, GameManager.Instance.Core.TechnicalSettings.PoolExtendSize);
+            
             return Retrieve(prefabId, parent);
         }
 
@@ -88,7 +91,7 @@ namespace CMCore.Managers
             prefab.transform.SetParent(PoolParent);
             prefab.gameObject.name = prefab.Id;
             prefab.gameObject.SetActive(false);
-            prefab.ResetBehavior();
+            
         }
 
         public static void ReturnAll()
