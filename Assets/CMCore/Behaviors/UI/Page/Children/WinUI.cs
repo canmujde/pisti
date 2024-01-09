@@ -9,15 +9,12 @@ namespace CMCore.Behaviors.UI.Page.Children
 {
     public class WinUI : UIBase
     {
-
-        public TextMeshProUGUI levelText;
-
-        public Image motivationalText;
-
-        public Sprite[] motivationalSprites;
-        
+        public int playerPoints;
+        public int opponentPoints;
 
         [SerializeField] private Button nextButton;
+        [SerializeField] private TextMeshProUGUI playerPointsText;
+        [SerializeField] private TextMeshProUGUI aiPointsText;
 
         private void NextButton_OnClick()
         {
@@ -35,9 +32,8 @@ namespace CMCore.Behaviors.UI.Page.Children
         protected override void OnShow()
         {
             base.OnShow();
-            levelText.text = "LEVEL " + (LevelManager.CurrentLevel - 1);
-            motivationalText.sprite = motivationalSprites[Random.Range(0, motivationalSprites.Length)]; 
-
+            playerPointsText.text = playerPoints.ToString();
+            aiPointsText.text = opponentPoints.ToString();
         }
         
 
