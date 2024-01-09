@@ -10,19 +10,17 @@ namespace CMCore.Behaviors.UI.Page.Children
 {
     public class LoadingUI : UIBase
     {
-        private float _closeDelay;
-
-        public float CloseDelay => _closeDelay == 0 ? _closeDelay = DataManager.GetValueFromJson(GameManager.DataManager.RemoteData, "loading_ui_delay", 0.0f) : _closeDelay;
+        private const float _closeDelay = 0.5f;
 
         protected override void OnHide()
         {
             KillTweens();
-            textLoading.DOColor(Color.clear, FadeOutDuration).SetDelay(CloseDelay);
-            foreach (var image in loadingAnimatedIcons) image.DOColor(Color.clear, FadeOutDuration).SetDelay(CloseDelay);
+            textLoading.DOColor(Color.clear, FadeOutDuration).SetDelay(_closeDelay);
+            foreach (var image in loadingAnimatedIcons) image.DOColor(Color.clear, FadeOutDuration).SetDelay(_closeDelay);
 
             foreach (var bb in bgImage)
             {
-                bb.DOColor(Color.clear, FadeOutDuration).SetDelay(CloseDelay).OnComplete(() =>
+                bb.DOColor(Color.clear, FadeOutDuration).SetDelay(_closeDelay).OnComplete(() =>
                 {
                     base.OnHide();
                     KillTweens();
@@ -45,9 +43,7 @@ namespace CMCore.Behaviors.UI.Page.Children
             foreach (var image in loadingAnimatedIcons) image.color = iconEnabledColor;
             gameObject.SetActive(true);
             GameManager.Instance.DelayedAction(Hide,
-                new WaitUntil(() =>
-                    !string.IsNullOrEmpty(GameManager.DataManager.RemoteData) || GameManager.DataManager.Attempts >=
-                    this.Settings().MaximumAttemptToRequestData));
+               1);
         }
 
         private void KillTweens()
