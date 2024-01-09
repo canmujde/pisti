@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using CMCore.Models;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -8,19 +9,19 @@ namespace CMCore.ScriptableObjects
     [CreateAssetMenu(fileName = "GameplaySettings", menuName = "CMCore/Gameplay Settings")]
     public class GameplaySettings : ScriptableObject
     {
-        
-        [field: SerializeField] public string BaseURL { get; private set; }
-        [field: SerializeField] public string GameName { get; private set; }
-        [field: SerializeField] public string FileExtensionOnRemote { get; private set; }
-        [field: SerializeField] public int MaximumAttemptToRequestData { get; private set; }
-        [field: SerializeField] public string FullURL { get; private set; }
-        
-        [BoxGroup]
-        [DisplayAsString(false), ShowInInspector, HideLabel] public string RemoteURL { get; private set; }
+        [field: SerializeField] public List<CardModel> Deck { get; private set; }
+        [field: SerializeField] public List<CardModel> CACHE { get; private set; }
 
-        private void OnValidate()
+
+        public Enums.CardType typ;
+        
+        [Button]
+        public void Add()
         {
-            RemoteURL = BaseURL + GameName + FileExtensionOnRemote;
+            for (int i = 2; i <= 10; i++)
+            {
+                Deck.Add(new CardModel(typ, i.ToString()));
+            }
         }
     }
     
