@@ -15,7 +15,7 @@ namespace CMCore.Managers
         #region Properties
 
         private Transform _levelRoot;
-
+        public LevelBehavior LevelBehavior { get; private set; }
 
         public Transform LevelRoot => Application.isPlaying
             ? _levelRoot == null ? _levelRoot = GameObject.Find("CoreRuntime").transform : _levelRoot
@@ -79,7 +79,9 @@ namespace CMCore.Managers
 
             Seed = RandomExtensions.RandomSeed();
             var level = GetLevelByIndex(CurrentLevelId);
-            var levelBehavior = PoolManager.Retrieve("LevelBehavior");
+            LevelBehavior = PoolManager.Retrieve("LevelBehavior").GetComponent<LevelBehavior>();
+            
+            // levelBehavior.ResetBehavior();
             
             
             return level;
